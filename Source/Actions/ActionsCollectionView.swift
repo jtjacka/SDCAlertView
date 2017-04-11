@@ -47,7 +47,7 @@ class ActionsCollectionView: UICollectionView {
             forDecorationViewOfKind: kVerticalActionSeparator)
 
         let nibName = String(describing: ActionCell.self)
-        let nib = UINib(nibName: nibName, bundle: Bundle(for: type(of: self)))
+        let nib = UINib(nibName: nibName, bundle: Bundle(for: ActionCell.self))
         self.register(nib, forCellWithReuseIdentifier: kActionCellIdentifier)
     }
 
